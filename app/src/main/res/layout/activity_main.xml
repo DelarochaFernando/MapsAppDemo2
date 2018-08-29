@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.delarocha.mapsappdemo.MainActivity">
+
+    <TextView
+        android:id="@+id/textCodigoPostal"
+        android:layout_width="match_parent"
+        android:layout_toRightOf="@+id/editCodigoPostal"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/editCodigoPostal"
+        android:layout_toRightOf="@+id/textCodigoPostal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnBuscar"
+        android:layout_toRightOf="@+id/editCodigoPostal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Spinner
+        android:id="@+id/spinnerColonia"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/editCodigoPostal"
+        android:layout_height="wrap_content"></Spinner>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinnerColonia"
+        android:id="@+id/textColonia"/>
+
+    <EditText
+        android:id="@+id/editColonia"
+        android:layout_below="@+id/textColonia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editColonia"
+        android:id="@+id/textCalle"/>
+
+    <EditText
+        android:id="@+id/editCalle"
+        android:layout_below="@+id/textCalle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
